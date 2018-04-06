@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "mono:pixelsize=14:antialias=true:autohint=true";
+// static char font[] = "mono:pixelsize=14:antialias=true:autohint=true";
+static char font[] = "Iosevka Wide Fira Type:pixelsize=16:antialias=true";
 static int borderpx = 2;
 
 /*
@@ -87,6 +88,46 @@ static const int alpha = 0xdd;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+	/* Personal Colour Theme */
+	"#2e3436",  /*  0: black     */
+	"#cc0000",  /*  1: red       */
+	"#4e9a06",  /*  2: green     */
+	"#c4a000",  /*  3: yellow    */
+	"#3465a4",  /*  4: blue      */
+	"#75507b",  /*  5: magenta   */
+	"#06989a",  /*  6: cyan      */
+	"#d3d7cf",  /*  7: white     */
+	"#555753",  /*  8: brblack   */
+	"#ef2929",  /*  9: brred     */
+	"#8ae234",  /* 10: brgreen   */
+	"#fce94f",  /* 11: bryellow  */
+	"#729fcf",  /* 12: brblue    */
+	"#ad7fa8",  /* 13: brmagenta */
+	"#34e2e2",  /* 14: brcyan    */
+	"#eeeeec",  /* 15: brwhite   */
+
+	"black",
+};
+
+/* Terminal colors for alternate (light) palette */
+static const char *altcolorname[] = {
+	/* solarized light */
+	// "#eee8d5",  /*  0: black    */
+	// "#dc322f",  /*  1: red      */
+	// "#859900",  /*  2: green    */
+	// "#b58900",  /*  3: yellow   */
+	// "#268bd2",  /*  4: blue     */
+	// "#d33682",  /*  5: magenta  */
+	// "#2aa198",  /*  6: cyan     */
+	// "#073642",  /*  7: white    */
+	// "#fdf6e3",  /*  8: brblack  */
+	// "#cb4b16",  /*  9: brred    */
+	// "#93a1a1",  /* 10: brgreen  */
+	// "#839496",  /* 11: bryellow */
+	// "#657b83",  /* 12: brblue   */
+	// "#6c71c4",  /* 13: brmagenta*/
+	// "#586e75",  /* 14: brcyan   */
+	// "#002b36",  /* 15: brwhite  */
 	/* solarized dark */
 	"#073642",  /*  0: black    */
 	"#dc322f",  /*  1: red      */
@@ -107,35 +148,13 @@ static const char *colorname[] = {
 	"black",
 };
 
-/* Terminal colors for alternate (light) palette */
-static const char *altcolorname[] = {
-	/* solarized light */
-	"#eee8d5",  /*  0: black    */
-	"#dc322f",  /*  1: red      */
-	"#859900",  /*  2: green    */
-	"#b58900",  /*  3: yellow   */
-	"#268bd2",  /*  4: blue     */
-	"#d33682",  /*  5: magenta  */
-	"#2aa198",  /*  6: cyan     */
-	"#073642",  /*  7: white    */
-	"#fdf6e3",  /*  8: brblack  */
-	"#cb4b16",  /*  9: brred    */
-	"#93a1a1",  /* 10: brgreen  */
-	"#839496",  /* 11: bryellow */
-	"#657b83",  /* 12: brblue   */
-	"#6c71c4",  /* 13: brmagenta*/
-	"#586e75",  /* 14: brcyan   */
-	"#002b36",  /* 15: brwhite  */
-	"black",
-};
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-static unsigned int defaultfg = 12;
-static unsigned int defaultbg = 257;
-static unsigned int defaultcs = 14;
+static unsigned int defaultfg = 7;
+static unsigned int defaultbg = 0;
+static unsigned int defaultcs = 5;
 static unsigned int defaultrcs = 15;
 
 /*
