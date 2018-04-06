@@ -81,7 +81,7 @@ static char termname[] = "st-256color";
  *
  *	stty tabs
  */
-static unsigned int tabspaces = 8;
+static unsigned int tabspaces = 4;
 
 /* bg opacity */
 static const int alpha = 0xdd;
