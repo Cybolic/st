@@ -192,7 +192,7 @@ static unsigned int defaultattr = 11;
  */
 static MouseShortcut mshortcuts[] = {
 	/* button               mask            string */
-	{ Button4,              XK_NO_MOD,      "\031" },
+	{ Button4,              XK_NO_MOD,      "\033[2;2~" },
 	{ Button5,              XK_NO_MOD,      "\005" },
 };
 
