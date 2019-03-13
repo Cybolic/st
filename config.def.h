@@ -105,8 +105,10 @@ static const char *colorname[] = {
 	"#ad7fa8",  /* 13: brmagenta */
 	"#34e2e2",  /* 14: brcyan    */
 	"#eeeeec",  /* 15: brwhite   */
+	[255] = 0,
 
-	"black",
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#171a1c", /* background */
 };
 
 /* Terminal colors for alternate (light) palette */
@@ -145,7 +147,6 @@ static const char *altcolorname[] = {
 	"#6c71c4",  /* 13: brmagenta*/
 	"#93a1a1",  /* 14: brcyan   */
 	"#fdf6e3",  /* 15: brwhite  */
-	"black",
 };
 
 /*
@@ -153,9 +154,9 @@ static const char *altcolorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 static unsigned int defaultfg = 7;
-static unsigned int defaultbg = 0;
+static unsigned int defaultbg = 256;
 static unsigned int defaultcs = 5;
-static unsigned int defaultrcs = 15;
+static unsigned int defaultrcs = 5;
 
 /*
  * Default shape of cursor
